@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children, user, onLogout, onLoginReques
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.location.hash = ''}>
             <div className="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">S</div>
-            <span className="text-xl font-bold text-gray-800 tracking-tight">Sewa<span className="text-teal-600">dKOTA</span></span>
+            <span className="text-xl font-bold text-gray-800 tracking-tight">Sewa<span className="text-teal-600">Lokal</span></span>
           </div>
 
           <nav className="flex items-center space-x-4">
