@@ -17,6 +17,14 @@ export interface User {
   email: string;
   phone: string;
   role: UserRole;
+  // New Profiling Fields
+  bio?: string;
+  avatarUrl?: string;
+  joinDate: string;
+  isVerified: boolean; // Admin verified
+  hasSelfieVerified: boolean; // Webcam verified
+  selfieUrl?: string;
+  trustScore: number; // 0 to 100
 }
 
 export interface Item {
@@ -31,6 +39,7 @@ export interface Item {
   imageUrl: string;
   status: ItemStatus;
   isFeatured: boolean;
+  isAvailable: boolean; // Owner can toggle this (e.g., currently rented out)
   createdAt: string;
 }
 
